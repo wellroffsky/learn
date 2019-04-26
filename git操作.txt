@@ -1,0 +1,19 @@
+ssh-keygen -t rsa -C “你注册github时的邮箱地址”
+
+git config --global user.name “你github的名字”
+git config --global user.email “你的github邮箱地址”
+
+git remote add origin https://github.com/wellroffsky/learn.git  （将地址名保存为origin）
+git remote -v  （查看有哪些保存的地址）
+
+git push origin master
+
+git clone https://github.com/wellroffsky/learn.git
+
+提交到本地库
+git add git的操作.txt
+git add .
+git commit -m "添加了第一个文件"
+
+git fetch origin master
+git merge origin/master
